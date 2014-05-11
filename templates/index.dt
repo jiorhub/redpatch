@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    div#b-new-patch
+        div#b-new-patch-number
+            div.current #{patches.length}    
+        div#b-action
+            form(action="/next", method="post")
+                input#next-button(type="submit", value="Получить")
+    div#b-list-patch
+        table#list-patch
+            tr.title
+                td Number
+                td Author
+                td DateTime
+            - foreach (patch; patches)
+                tr
+                    td #{patch.number}
+                    td #{patch.username}
+                    td #{patch.create_date}
+
+block scripts
+    script
+        $(document).ready(function(){
+            //$("#next-button").click(function(){
+            //    alert("r");
+            //});
+        });

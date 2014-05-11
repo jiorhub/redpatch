@@ -1,0 +1,80 @@
+/* line 5, ../../scss/scss/styles.scss */
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+}
+
+/* line 10, ../../scss/scss/styles.scss */
+body {
+  background-color: #f7f7f7;
+}
+
+/* line 14, ../../scss/scss/styles.scss */
+#s-top {
+  background-color: #aeaeae;
+  height: 52px;
+  border-bottom: 10px solid #d8d8d8;
+}
+
+#title-site {
+    font-size: 22px;
+    margin-top: 7px;
+    text-shadow: 0 0 2px #000000;
+    text-transform: uppercase;
+    float: left;
+}
+
+#title-login {
+    float: right;
+    margin-top: 10px;
+}
+
+#login-form td {
+    padding: 5px;
+}
+
+#b-login-form {
+    border: 1px solid #808080;
+    border-radius: 5px;
+    margin: 120px auto;
+    width: 312px; 
+    padding: 18px;
+    box-shadow: 3px 2px 9px #808080;  
+}
+
+#b-new-patch, #b-list-patch {
+    float: left;
+    margin: 15px;
+}
+
+#b-new-patch {
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#b-new-patch .current {
+    font-size: 22px;
+    font-weight: bold;    
+}
+
+#b-new-patch-number {
+    margin: 10px;
+}
+
+#b-list-patch {
+    width: 696px;
+}
+
+#list-patch {
+    width: 100%;
+}
+
+#list-patch td{
+    padding: 5px;
+}
+
+#list-patch .title {
+    background-color: #AEAEAE;
+}

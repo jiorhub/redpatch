@@ -1,0 +1,8 @@
+{
+    "libs": ["event", "ssl", "crypto", "sqlite3"],
+    "nameApp": "iterpatch",
+    "pathLibs": [],
+    "versions": ["VibeLibeventDriver", "VibeDefaultMain"],
+    "stringImports": ["templates"],
+    "unittest": 0
+}
