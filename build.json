@@ -1,6 +1,6 @@
 {
     "libs": ["event", "ssl", "crypto", "sqlite3"],
-    "nameApp": "iterpatch",
+    "nameApp": "redpatch",
     "pathLibs": [],
     "versions": ["VibeLibeventDriver", "VibeDefaultMain"],
     "stringImports": ["templates"],

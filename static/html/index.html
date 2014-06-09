@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="redpath">
+	<head>
+		<title>Red Patch</title>
+		<link rel="stylesheet" href="/static/libs/maxmertkit/maxmertkit.css"/>
+		<link rel="stylesheet" href="/static/css/styles.css"/>
+	</head>
+	<body>
+		<header id="site-header">
+			<img src="/static/images/redsoft_logo.gif" id="site-logo"/>
+		</header>
+		<nav>
+			<ul class="-tabs _responsive_" ng-controller="MenuController">
+				<li ngClass="{_active_: item.active}" ng-repeat="item in items">
+					<a href="#{{item.href}}">{{item.caption}}</a>
+				</li>
+			</ul>
+		</nav>
+		<section id="site-body">
+			<ng-view></ng-view>
+		</section>
+		<footer id="site-footer">
+			Author: Oleg Lelenkov
+		</footer>
+	</body>
+	<script src="/static/libs/angular/angular.min.js"></script>
+	<script src="/static/libs/angular/angular-route.min.js"></script>
+	<script src="/static/libs/maxmertkit/maxmertkit.js"></script>
+	<script src="/static/js/app.js"></script><!-- Default block scripts in layout.dt-->
+</html>

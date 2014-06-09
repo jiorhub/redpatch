@@ -1,6 +1,12 @@
 module config;
 
-class IterPatchConfig {
-    ushort serverPort = 8080;
-    string databaseName = "iterpatch.db";
+private {
+	import common;
+}
+
+class Config {
+	mixin Singleton!Config;
+
+    enum serverPort = 8080;
+    enum databaseName = "iterpatch.db";
 }

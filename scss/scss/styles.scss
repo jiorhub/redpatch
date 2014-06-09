@@ -1,0 +1,20 @@
+/*@import "compass/reset";*/
+
+body {
+  background-color: #f7f7f7;
+}
+
+#site-header {
+	border-top: 3px solid #ED1D24;
+	background-color: #FFFFFF;
+
+	#site-logo {
+		margin: 10px;
+	}
+}
+
+#site-footer {
+	font-size: 10px;
+	color: gray;
+	margin: 10px;
+}

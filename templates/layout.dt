@@ -1,29 +1,22 @@
 !!! 5
-html(lang="ru", ng-app="main")
-  head
-    title Iterator Patch Number
-    link(rel="stylesheet", href="/static/libs/bootstrap/css/bootstrap.min.css")
-    link(rel="stylesheet", href="/static/libs/smartadmin/css/smartadmin-theme.css")
-    link(rel="stylesheet", href="/static/css/styles.css")
-  body
-    section#s-top
-      div.wrapper
-        div#title-site Iterator Patch Number
-        div#title-login
-          - if (req.session)
-            | Login as 
-              b #{req.session["username"]}
-          - else
-            a(href="/login") Login
-    section#s-middle
-      div.wrapper  
-        block content     
-    section#s-bottom
-      div.wrapper
+html(lang="ru", ng-app="redpath")
+    head
+        title Red Patch
+        link(rel="stylesheet", href="/static/libs/maxmertkit/maxmertkit.css")
+        link(rel="stylesheet", href="/static/css/styles.css")
+    body
+        header#site-header
+            img(src="/static/images/redsoft_logo.gif")#site-logo
+
+        section#site-body
+            ul.-tabs._responsive_
+                li._active_
+                    a Login
         
-  script(src="/static/libs/jquery-1.11.0.min.js")
-  script(src="/static/libs/angular.min.js")
-  script(src="/static/libs/ui-bootstrap-tpls-0.10.0.min.js")
-  script(src="/static/js/app.js")
-  script(src="/static/js/controllers.js")
-  block scripts
+
+    script(src="/static/libs/angular/angular.min.js")
+    script(src="/static/libs/angular/angular-route.min.js")
+    script(src="/static/libs/maxmertkit/maxmertkit.js")  
+    script(src="/static/js/app.js")
+
+    block scripts
